@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.PoiCountries" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+    </style>
+
+<!--    <style name="filterCheckBoxButton" parent="@style/Widget.Material3.CompoundButton.CheckBox">-->
+<!--        &lt;!&ndash; Customize your light theme here. &ndash;&gt;-->
+<!--        <item name="android:buttonTint">@color/light_purple</item>-->
+<!--        <item name="android:checkMarkTint">@color/white</item>-->
+<!--    </style>-->
+
+
+
+
+    <style name="Theme.PoiCountries" parent="Base.Theme.PoiCountries" />
+</resources>

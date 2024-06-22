@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CountryDetailsFragment">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.poicountries.ui.countrydetailsscreen.CountryDetailsViewModel" />
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/flag"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:contentDescription="@{viewModel.imageDescription}"
+            android:gravity="start"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/country_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:text="@{viewModel.countryName}"
+            android:gravity="start"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/country_subregion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:text="@{viewModel.countrySubregion}"
+            android:gravity="start"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/capital_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:text="@{viewModel.capital}"
+            android:gravity="start"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/country_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="start"
+            android:textSize="16sp"
+            android:text="@{viewModel.formatAreaString()}" />
+
+        <TextView
+            android:id="@+id/population"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="start"
+            android:textSize="16sp"
+            android:text="@{viewModel.population}" />
+
+        <TextView
+            android:id="@+id/country_languages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="start"
+            android:textSize="16sp"
+            android:text="@{viewModel.formatLanguagesString()}" />
+
+        <TextView
+            android:id="@+id/country_borders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="start"
+            android:textSize="16sp"
+            android:text="@{viewModel.formatBordersString()}" />
+
+
+    </LinearLayout>
+
+</layout>

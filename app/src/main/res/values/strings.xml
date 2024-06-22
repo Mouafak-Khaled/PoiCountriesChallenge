@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Europe</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="sort_by_text">Sort Country By</string>
+
+    <string name="country_name_btn">Name</string>
+    <string name="population_btn">Population</string>
+
+    <string name="sort_asc">Ascending</string>
+    <string name="sort_desc">Descending</string>
+
+    <string name="filter_by">Filter By</string>
+
+    <string name="eastern_europe_subregion">Eastern Europe</string>
+    <string name="southeast_europe_subregion">Southeast Europe</string>
+    <string name="western_europe_subregion">Western Europe</string>
+    <string name="northern_europe_subregion">Northern Europe</string>
+    <string name="central_europe_subregion">Central Europe</string>
+    <string name="southern_europe_subregion">Southern Europe</string>
+
+
+
+</resources>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp">
+
+        <TextView
+            android:id="@+id/filter_by"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:gravity="center"
+            android:text="@string/filter_by"
+            android:textColor="@color/light_purple"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/subregions_group"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/subregions_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/filter_by">
+
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/southeast_europe_subregion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/southeast_europe_subregion"
+                android:textColor="@color/light_purple"
+                android:textSize="20sp"
+                app:buttonTint="@color/light_purple" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/southern_europe_subregion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/southern_europe_subregion"
+                android:textColor="@color/light_purple"
+                android:textSize="20sp"
+                app:buttonTint="@color/light_purple" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/northern_europe_subregion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/northern_europe_subregion"
+                android:textColor="@color/light_purple"
+                android:textSize="20sp"
+                app:buttonTint="@color/light_purple" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/western_europe_subregion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/western_europe_subregion"
+                android:textColor="@color/light_purple"
+                android:textSize="20sp"
+                app:buttonTint="@color/light_purple" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/eastern_europe_subregion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/eastern_europe_subregion"
+                android:textColor="@color/light_purple"
+                android:textSize="20sp"
+                app:buttonTint="@color/light_purple" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/central_europe_subregion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/central_europe_subregion"
+                android:textColor="@color/light_purple"
+                android:textSize="20sp"
+                app:buttonTint="@color/light_purple" />
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

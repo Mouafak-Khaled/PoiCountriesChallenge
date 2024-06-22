@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/sorting"
+        android:title="sort"
+        android:actionLayout="@layout/sorting_menu_item"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/filtering"
+        android:title="filter"
+        android:actionLayout="@layout/filtering_menu_item"
+        app:showAsAction="always"/>
+
+</menu>
